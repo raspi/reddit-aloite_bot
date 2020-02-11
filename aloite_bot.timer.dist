@@ -1,0 +1,13 @@
+[Unit]
+Description=Reddit aloite_bot Timer
+
+[Timer]
+# Change this if necessary
+Unit=aloite_bot.service
+OnBootSec=10min
+Persistent=true
+OnUnitInactiveSec=1h
+RandomizedDelaySec=15min
+
+[Install]
+WantedBy=timers.target

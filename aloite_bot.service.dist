@@ -1,0 +1,14 @@
+[Unit]
+Description=Reddit aloite_bot
+
+[Service]
+# Change this!
+WorkingDirectory=/home/raspi/reddit-aloite_bot
+ExecStart=python main.py
+Type=oneshot
+TimeoutStopSec=10m
+KillMode=process
+KillSignal=SIGINT
+
+[Install]
+WantedBy=timers.target
